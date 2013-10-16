@@ -412,6 +412,17 @@ Doesn't mess with special buffers."
 (diminish 'undo-tree-mode)
 
 
+;; Helm, successor of anything
+(require 'helm-config)
+
+;; visible mark
+(require 'visible-mark)
+(visible-mark-mode)
+
+;; Add newlines when moving past end of file
+(setq next-line-add-newlines t)
+
+
 ;; END Global editor settings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -482,9 +493,6 @@ Windows external keyboard from time to time."
 (global-set-key (kbd "M-o") 'other-window)
 
 
-;; Swapping keybindings for C-h to enable easy backspace
-;; (define-key key-translation-map [?\C-h] [?\C-?])
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Go programming language stuff
@@ -529,6 +537,26 @@ Windows external keyboard from time to time."
 
 ;; End C++ stuff ;;
 ;;;;;;;;;;;;;;;;;;;
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;
+;;;; Python stuff ;;;;;
+;; move out to c++ config file
+
+
+;; jedi mode
+(require 'jedi)
+;; (add-hook 'python-mode-hook 'auto-complete-mode)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:setup-keys t)                      ; optional
+(setq jedi:complete-on-dot t)                 ; optional
+(setq jedi:get-in-function-call-delay 100)
+
+
+;;;; END Python stuff ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 
 ;; Markdown mode
