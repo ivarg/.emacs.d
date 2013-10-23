@@ -1,0 +1,15 @@
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-indent-style 2)
+(setq web-mode-style-padding 1)
+(setq web-mode-script-padding 1)
+(setq web-mode-block-padding 0)
+(setq web-mode-comment-style 2)
+(set-face-attribute 'web-mode-html-tag-face nil :foreground "Pink3")
+(setq web-mode-enable-current-element-highlight t)
+
+(provide 'setup-web-mode)

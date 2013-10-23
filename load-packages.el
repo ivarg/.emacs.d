@@ -29,6 +29,7 @@
     browse-kill-ring
     diminish
     elisp-slime-nav
+    ;; epc
     exec-path-from-shell
     expand-region
     flx-ido
@@ -56,6 +57,8 @@
     undo-tree
     visible-mark
     volatile-highlights
+    web-mode
+    multi-web-mode
     yasnippet
     ;; simple-httpd
     ;; htmlize
@@ -77,6 +80,7 @@
 		(package-install p)))))
 
 (package-initialize)
+(install-if-not-present)
 
 (provide 'load-packages)
 
