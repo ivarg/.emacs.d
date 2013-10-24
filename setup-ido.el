@@ -4,7 +4,7 @@
 ;; TODO: Learn this, or icicles
 (require 'ido)
 (require 'ido-ubiquitous)
-(require 'ido-at-point)
+;;(require 'ido-at-point) WINDOWS
 (require 'flx-ido)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t

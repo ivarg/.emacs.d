@@ -6,8 +6,9 @@
 (require 'cl)
 (require 'package)
 
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 (package-initialize)
 
@@ -35,17 +36,16 @@
     flx-ido
     flycheck
     git-commit-mode
-    gitconfig-mode
+;;    gitconfig-mode
     gitignore-mode
     go-mode
-    go-autocomplete
-    helm
+;;    go-autocomplete
+;;    helm
     jedi
-    icicles
-    helm
-    help-fns+
+;;    icicles
+;;    help-fns+
     ido-ubiquitous
-    ido-at-point
+;;    ido-at-point
     magit
 	multi-term
     multiple-cursors
@@ -55,7 +55,7 @@
     smartparens
     smex
     undo-tree
-    visible-mark
+;;    visible-mark
     volatile-highlights
     web-mode
     multi-web-mode
