@@ -40,6 +40,7 @@
                                             (abbreviate-file-name (buffer-file-name))
                                           "%b"))))
 
+(visual-line-mode)
 
 ;; END Editor UI settings
 ;;;;;;;;;;;;;;;;;;;;;;;

@@ -38,8 +38,6 @@
     git-commit-mode
 ;;    gitconfig-mode
     gitignore-mode
-    go-mode
-;;    go-autocomplete
 ;;    helm
     jedi
 ;;    icicles
