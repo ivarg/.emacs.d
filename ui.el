@@ -4,8 +4,6 @@
 ;; I like my font a little bigger
 ;; OSX 130, WINDOWS 110
 ;; (set-face-attribute 'default nil :height 110)
-(set-face-attribute 'default nil :font "Consolas-12.0" :height 110)
-
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
 

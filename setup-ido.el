@@ -1,10 +1,12 @@
 (message "- Setting up ido")
 
 ;; ido-mode ;;;;;;;;;;;;;;;;;;;;;;;;
-;; TODO: Learn this, or icicles
+
+(add-to-list 'load-path (concat user-emacs-directory "packages/ido-at-point"))
+
 (require 'ido)
 (require 'ido-ubiquitous)
-;;(require 'ido-at-point) WINDOWS
+(require 'ido-at-point)
 (require 'flx-ido)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
@@ -16,6 +18,7 @@
 (ido-mode +1)
 (ido-everywhere 1)
 (ido-ubiquitous-mode +1)
+(ido-at-point-mode)
 ;; smarter fuzzy matching for ido
 (flx-ido-mode +1)
 ;; disable ido faces to see flx highlights

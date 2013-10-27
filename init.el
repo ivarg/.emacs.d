@@ -19,6 +19,13 @@
 
 (require 'misc-functions)
 (require 'load-packages)
+
+(when (eq system-type 'darwin)
+  (require 'osx))
+(when (eq system-type 'windows-nt)
+  (require 'windows))
+
+
 (require 'key-bindings)
 
 (require 'ui)
@@ -26,9 +33,7 @@
 (require 'defaults)
 (require 'misc)
 
-(when (eq system-type 'darwin)
-  (require 'osx))
-
+(require 'setup-helm)
 (require 'setup-multi-term)
 (require 'setup-smartparens)
 (require 'setup-ido)

@@ -1,0 +1,6 @@
+[submodule "packages/helm"]
+	path = packages/helm
+	url = https://github.com/emacs-helm/helm.git
+[submodule "packages/ido-at-point"]
+	path = packages/ido-at-point
+	url = https://github.com/katspaugh/ido-at-point.git

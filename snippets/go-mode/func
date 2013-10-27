@@ -1,9 +1,8 @@
 # -*- mode: snippet -*-
-# name: func declaration
+# name: func
 # key: func
+# contributor: ivarg
 # --
-// {$1}
-func {${1:tjo}} ($2) {
+func ${3:$(when (> (length yas-text) 0) "(")}$3${3:$(when (> (length yas-text) 0) ")")} $1 ($2) {
 $0
 }
-
