@@ -12,15 +12,6 @@
 
 (package-initialize)
 
-;; (defvar my-packages
-;;   '(ace-jump-mode ack-and-a-half anzu dash diminish elisp-slime-nav
-;;     expand-region flx-ido flycheck gist
-;;     git-commit-mode gitconfig-mode gitignore-mode grizzl
-;;     guru-mode helm helm-projectile ido-ubiquitous
-;;     key-chord magit move-text rainbow-mode
-;;     smartparens smex undo-tree
-;;     volatile-highlights zenburn-theme))
-
 (defvar my-packages
   '(
     ace-jump-mode
@@ -30,20 +21,14 @@
     browse-kill-ring
     diminish
     elisp-slime-nav
-    ;; epc
     exec-path-from-shell
     expand-region
     flx-ido
     flycheck
     git-commit-mode
-;;    gitconfig-mode
     gitignore-mode
-;;    helm
     jedi
-;;    icicles
-;;    help-fns+
     ido-ubiquitous
-;;    ido-at-point
     magit
 	multi-term
     multiple-cursors
@@ -53,13 +38,10 @@
     smartparens
     smex
     undo-tree
-;;    visible-mark
     volatile-highlights
     web-mode
     multi-web-mode
     yasnippet
-    ;; simple-httpd
-    ;; htmlize
     )
   "A list of packages to ensure are installed at launch.")
 

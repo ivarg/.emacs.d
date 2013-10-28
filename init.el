@@ -23,7 +23,8 @@
 (when (eq system-type 'darwin)
   (require 'osx))
 (when (eq system-type 'windows-nt)
-  (require 'windows))
+  (require 'windows)
+  (require 'setup-pandoc-mode))
 
 
 (require 'key-bindings)
@@ -34,6 +35,8 @@
 (require 'misc)
 
 (require 'setup-helm)
+(require 'setup-ace-jump)
+
 (require 'setup-multi-term)
 (require 'setup-smartparens)
 (require 'setup-ido)
