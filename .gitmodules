@@ -4,3 +4,6 @@
 [submodule "packages/ido-at-point"]
 	path = packages/ido-at-point
 	url = https://github.com/katspaugh/ido-at-point.git
+[submodule "packages/go-mode"]
+	path = packages/go-mode
+	url = https://github.com/dominikh/go-mode.el.git
