@@ -19,20 +19,15 @@
 
 (require 'misc-functions)
 (require 'load-packages)
+(require 'misc)
+(require 'key-bindings)
+(require 'defaults)
 
 (when (eq system-type 'darwin)
   (require 'osx))
 (when (eq system-type 'windows-nt)
   (require 'windows)
   (require 'setup-pandoc-mode))
-
-
-(require 'key-bindings)
-
-(require 'ui)
-
-(require 'defaults)
-(require 'misc)
 
 (require 'setup-helm)
 (require 'setup-ace-jump)
