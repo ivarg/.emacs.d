@@ -17,7 +17,6 @@
 
 (add-to-list 'load-path user-emacs-directory)
 
-(require 'misc-functions)
 (require 'load-packages)
 (require 'misc)
 (require 'key-bindings)
