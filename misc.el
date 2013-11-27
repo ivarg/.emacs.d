@@ -34,5 +34,13 @@
       recentf-max-menu-items 15)
 (recentf-mode +1)
 
+;; create directories when saving a new buffer, if it's path does not exist
+(add-hook 'before-save-hook
+          (lambda ()
+            (when buffer-file-name
+              (let ((dir (file-name-directory buffer-file-name)))
+                (when (and (not (file-exists-p dir))
+                           (y-or-n-p (format "Directory %s does not exist. Create it?" dir)))
+                  (make-directory dir t))))))
 
 (provide 'misc)
