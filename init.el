@@ -20,7 +20,7 @@
 (require 'load-packages)
 (require 'misc)
 (require 'key-bindings)
-(require 'defaults)
+(require 'setup-defaults)
 
 (when (eq system-type 'darwin)
   (require 'osx))
