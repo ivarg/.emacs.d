@@ -4,6 +4,7 @@
 
 ;; (add-to-list 'load-path (concat user-emacs-directory "packages/go-mode"))
 (add-to-list 'load-path (concat (getenv "GOROOT") "/libexec/misc/emacs"))
+(add-to-list 'load-path (concat (getenv "GOROOT") "/misc/emacs"))
 (add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/nsf/gocode/emacs"))
 (add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
 
