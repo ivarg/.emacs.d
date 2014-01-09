@@ -50,7 +50,7 @@
 (require 'setup-go-mode)
 (require 'setup-scss-mode)
 (require 'setup-cpp-mode)
-(require 'setup-python-mode)
+;; (require 'setup-python-mode)
 
 
 ;; (require 'help-fns+)
