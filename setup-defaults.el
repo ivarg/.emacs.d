@@ -2,7 +2,7 @@
 (blink-cursor-mode -1)
 
 ;; Highlight the current line, or not
-(global-hl-line-mode 1)
+(global-hl-line-mode -1)
 
 ;; nice scrolling
 (setq scroll-margin 0
@@ -17,6 +17,12 @@
 (column-number-mode 1)
 (line-number-mode -1)
 (size-indication-mode -1)
+
+;; delete the selection with a keypress
+(delete-selection-mode t)
+
+;; revert buffers automatically when underlying files are changed externally
+(global-auto-revert-mode t)
 
 ;; Make the fringe (gutter) smaller
 ;; the argument is a width in pixels (the default is 8)
@@ -34,7 +40,7 @@
                                           "%b"))))
 
 ;; Wrap long lines at word boundaries
-(visual-line-mode)
+(visual-line-mode 1)
 
 ;; END Editor UI settings;; Revert buffers automatically when underlying files are changed externally?
 (global-auto-revert-mode t)
