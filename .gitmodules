@@ -13,3 +13,9 @@
 [submodule "packages/scss-mode"]
 	path = packages/scss-mode
 	url = https://github.com/antonj/scss-mode
+[submodule "packages/magit"]
+	path = packages/magit
+	url = https://github.com/magit/magit.git
+[submodule "packages/git-modes"]
+	path = packages/git-modes
+	url = https://github.com/magit/git-modes.git

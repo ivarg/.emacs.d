@@ -30,7 +30,7 @@
 
 (require 'setup-helm)
 (require 'setup-ace-jump)
-
+(require 'setup-magit)
 (require 'setup-multi-term)
 (require 'setup-smartparens)
 (require 'setup-ido)

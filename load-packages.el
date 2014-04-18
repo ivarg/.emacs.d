@@ -25,11 +25,8 @@
     expand-region
     flx-ido
     flycheck
-    git-commit-mode
-    gitignore-mode
     jedi
     ido-ubiquitous
-    magit
 	multi-term
     multiple-cursors
     markdown-mode
