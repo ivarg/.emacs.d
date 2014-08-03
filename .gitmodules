@@ -19,3 +19,6 @@
 [submodule "packages/git-modes"]
 	path = packages/git-modes
 	url = https://github.com/magit/git-modes.git
+[submodule "packages/js2-mode"]
+	path = packages/js2-mode
+	url = git@github.com:mooz/js2-mode.git

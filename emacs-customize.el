@@ -6,7 +6,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (wombat)))
  '(default-frame-alist (quote ((menu-bar-lines . 1) (width . 110) (height . 55))))
- '(emulate-mac-finnish-keyboard-mode t))
+ '(emulate-mac-finnish-keyboard-mode t)
+ '(js2-basic-offset 2))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

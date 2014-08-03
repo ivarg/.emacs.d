@@ -50,6 +50,7 @@
 (require 'setup-go-mode)
 (require 'setup-scss-mode)
 (require 'setup-cpp-mode)
+(require 'setup-js2-mode)
 ;; (require 'setup-python-mode)
 
 
