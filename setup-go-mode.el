@@ -11,13 +11,12 @@
 
 (add-to-list 'load-path go-mode-dir)
 (add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/nsf/gocode/emacs"))
-(add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
-
 (require 'go-mode-load)
 (require 'go-autocomplete)
 (require 'auto-complete-config)
-(require 'go-flymake)
-(require 'go-flycheck)
+
+;; Goipmorts
+(setq gofmt-command "goimports")
 
 (add-hook 'before-save-hook 'gofmt-before-save)
 
@@ -28,6 +27,15 @@
                           (local-set-key (kbd "M-.") 'godef-jump)
                           (smartparens-mode)
                           ))
+
+;; Go Flymake
+(add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
+(require 'go-flymake)
+(require 'go-flycheck)
+
+;; Go Oracle
+(load (concat (getenv "GOPATH") "/src/code.google.com/p/go.tools/cmd/oracle/oracle.el"))
+(add-hook 'go-mode-hook 'go-oracle-mode)
 
 ;; END Go programming language stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
