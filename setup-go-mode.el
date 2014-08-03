@@ -2,21 +2,22 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Go programming language stuff
 
-;; (add-to-list 'load-path (concat user-emacs-directory "packages/go-mode"))
-(add-to-list 'load-path (concat (getenv "GOROOT") "/misc/emacs"))
-(add-to-list 'load-path (concat (getenv "GOROOT") "/libexec/misc/emacs"))
+(setq go-mode-dir (concat user-emacs-directory "packages/go-mode"))
+
+;; Generate autoload file for go-mode if it does not exist
+(let ((generated-autoload-file (concat go-mode-dir "/go-mode-load.el")))
+  (unless (file-exists-p generated-autoload-file)
+    (update-file-autoloads (concat go-mode-dir "/go-mode.el"))))
+
+(add-to-list 'load-path go-mode-dir)
 (add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/nsf/gocode/emacs"))
 (add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
 
 (require 'go-mode-load)
-
 (require 'go-autocomplete)
 (require 'auto-complete-config)
-
 (require 'go-flymake)
 (require 'go-flycheck)
-
-(global-auto-complete-mode)
 
 (add-hook 'before-save-hook 'gofmt-before-save)
 
@@ -27,8 +28,6 @@
                           (local-set-key (kbd "M-.") 'godef-jump)
                           (smartparens-mode)
                           ))
-
-
 
 ;; END Go programming language stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
