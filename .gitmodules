@@ -22,3 +22,6 @@
 [submodule "packages/js2-mode"]
 	path = packages/js2-mode
 	url = git@github.com:mooz/js2-mode.git
+[submodule "packages/cmake-mode"]
+	path = packages/cmake-mode
+	url = https://github.com/roysc/cmake-mode.git

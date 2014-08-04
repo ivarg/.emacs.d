@@ -52,7 +52,7 @@
 (require 'setup-cpp-mode)
 (require 'setup-js2-mode)
 ;; (require 'setup-python-mode)
-
+(require 'setup-cmake-mode)
 
 ;; (require 'help-fns+)
 
