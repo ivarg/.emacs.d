@@ -51,7 +51,7 @@
 (require 'setup-scss-mode)
 (require 'setup-cpp-mode)
 ;; (require 'setup-python-mode)
-
+(require 'setup-cmake-mode)
 
 ;; (require 'help-fns+)
 
