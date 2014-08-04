@@ -26,3 +26,6 @@
 	path = packages/cmake-mode
 	url = https://github.com/roysc/cmake-mode.git
 
+[submodule "packages/emacs-go-eldoc"]
+	path = packages/emacs-go-eldoc
+	url = https://github.com/syohex/emacs-go-eldoc.git
