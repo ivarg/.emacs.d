@@ -37,7 +37,7 @@
 
 (add-hook 'go-mode-hook (lambda()
                           (set (make-local-variable 'company-backends) '(company-go))
-                          (local-set-key (kbd "M-SPC") 'company-complete)
+                          (local-set-key (kbd "C-.") 'company-complete)
                           (company-mode)))
 
 
@@ -68,6 +68,9 @@
      '(help-at-pt-timer-delay 0.5)
      '(help-at-pt-display-when-idle '(flymake-overlay)))
 
+(add-hook 'go-mode-hook (lambda()
+                          (local-set-key (kbd "C-c C-n") 'flymake-goto-next-error)
+                          ))
 
 ;; Go Oracle
 (load (concat (getenv "GOPATH") "/src/code.google.com/p/go.tools/cmd/oracle/oracle.el"))
