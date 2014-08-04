@@ -58,10 +58,16 @@
                           (smartparens-mode)
                           ))
 
-;; Go Flymake
+;; go-flymake
 (add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
 (require 'go-flymake)
 (require 'go-flycheck)
+
+;; Make the flymake error message appear in minibuffer
+(custom-set-variables
+     '(help-at-pt-timer-delay 0.5)
+     '(help-at-pt-display-when-idle '(flymake-overlay)))
+
 
 ;; Go Oracle
 (load (concat (getenv "GOPATH") "/src/code.google.com/p/go.tools/cmd/oracle/oracle.el"))
