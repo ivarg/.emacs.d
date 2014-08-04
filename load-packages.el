@@ -39,6 +39,7 @@
     web-mode
     multi-web-mode
     yasnippet
+    company
     )
   "A list of packages to ensure are installed at launch.")
 
