@@ -9,6 +9,9 @@
       scroll-conservatively 100000
       scroll-preserve-screen-position 1)
 
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 3) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
 ;; Global Line Number Mode, plus formatting
 (global-linum-mode 1)
 (setq linum-format "%3d\u2502")
