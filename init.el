@@ -53,6 +53,8 @@
 (require 'setup-js2-mode)
 ;; (require 'setup-python-mode)
 (require 'setup-cmake-mode)
+(require 'setup-swig-mode)
+
 
 ;; (require 'help-fns+)
 

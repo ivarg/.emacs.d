@@ -29,3 +29,6 @@
 [submodule "packages/emacs-go-eldoc"]
 	path = packages/emacs-go-eldoc
 	url = https://github.com/syohex/emacs-go-eldoc.git
+[submodule "packages/swig-mode"]
+	path = packages/swig-mode
+	url = https://github.com/dholm/swig-mode.git
